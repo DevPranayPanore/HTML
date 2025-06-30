@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Tags</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        table{
+            height: 100%;
+            width: 100%;
+        }
+        td{
+            border-style: solid;
+            border-color: gray;
+            border-width: 2px;
+            border-collapse: collapse;
+        }
+        .white{
+            background-color: rgb(193, 76, 76);
+        }
+        .black{
+            background-color: rgb(255, 166, 0);
+
+        }
+        .blue{
+            background-color: rgb(128, 255, 0);
+        }
+        .red{
+            background-color: rgb(0, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+<tr>
+    <td rowspan="2" class="white"></td>
+    <td class="black"></td>
+    <td class="blue"></td>
+    <td class="red"></td>  
+</tr>
+<tr>
+    <td class="red"></td>
+    <td class="white"></td>
+    <td rowspan="2"class="black"></td>
+</tr>
+<tr>
+    <td class="blue"></td>
+    <td rowspan="2"class="black"></td>
+    <td rowspan="2"class="blue"></td>
+</tr>
+<tr>
+    <td class="black"></td>
+    <td class="white"></td>
+  
+</tr>
+
+
+    </table>
+</body>
+</html>
