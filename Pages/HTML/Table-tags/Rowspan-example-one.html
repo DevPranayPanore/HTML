@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title>Document</title>
-<style>
-table{
-    height: 80vh;
-    width: 80vw;
-}
-td{
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    border-collapse: collapse;
-}
-</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranay Panore - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td rowspan="5"></td>     
-        </tr>
-        <tr>
-            <td rowspan="5"></td>   
-        </tr>
-        <tr>
-            <td rowspan="5"></td>
-        </tr>
-        <tr>
-            <td rowspan="5"></td>
-        </tr>
-        <tr>
-            <td rowspan="5"></td>
-        </tr>
-    </table>
+
+    <header>
+        <nav class="navbar">
+            <h3 class="logo">Portfolio</h3>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="intro">
+            <h1>I'm Pranay Panore</h1>
+            <p>FULL-STACK DEVELOPER</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My HTML & CSS Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card Example -->
+            <div class="project-card">
+                <img src="https://www.sportsforlife.in/_next/image?url=https%3A%2F%2Fsports-for-life-website-images.s3.ap-south-1.amazonaws.com%2FBlog%2BImages%2Fchess-board-setup.png&w=640&q=75"
+                    alt="Chess Layout" />
+                <h3>Chess Layout</h3>
+                <a href="./projects/chess.html" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RlW_GAsfBOsPK8AM-zZbo-Jl_R4vECwmJQ&s"
+                    alt="Student Guide" />
+                <h3>CS Student Guide</h3>
+                <a href="./projects/student-guide.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Add more projects below using same structure -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About</h2>
+        <p>I am a full-stack developer passionate about building user-friendly web applications. I specialize in HTML,
+            CSS, and JavaScript, with experience in backend technologies too.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pranay Panore. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
