@@ -10,77 +10,201 @@
             padding: 0;
             margin: 0;
         }
-
-        .container {
+        table{
             width: 100%;
-
+            height: 100vh;
+            border-collapse: collapse;
         }
-        p{
-            margin: 0%;
-            padding: 0%;
-        }
-         .name {
-            
-            font-size: 40px;
-            color: antiquewhite;
-            margin-top: 500px;
+        img{
+            width: 400px;
+            height: 450px;
         }
 
-        .header {
+        .heading {
             width: 100%;
-            height: 50px;
-            background-color: rgb(207, 147, 125);
+            height: 45px;
+            background-color: rgb(138, 129, 45);
             text-align: right;
             position: fixed;
-           
+            z-index: 1;
+
+
         }
 
-        .Portfolio {
-            padding-right: 500px;
+        .portfolio {
             font-size: 35px;
+            color: rgb(0, 0, 0);
+            padding-right: 450px;
         }
 
-        span {
-            font-size: 20px;
-            padding-right: 80px;
-            font-size: 25px;
+        .tags:hover {
+            font-size: 30px;
+            color: rgb(2, 2, 2);
+            background-color: rgb(0, 0, 0);
         }
 
-        .main {
-            width: 100%;
+        .tags {
+            color: rgb(98, 34, 34);
+            padding-right: 100PX;
+            font-size: 22PX;
+
+
+        }
+
+        .Home {
             height: 800px;
-            background-color: cornflowerblue;
-            background-image: url(https://images.prismic.io//intuzwebsite/d394de11-2b7f-4a72-a3e0-c876f7356a40_Main.png?w=1200&q=75&auto=format,compress&fm=png8);
+            width: 100%;
+            background-image: url(https://aicdn.picsart.com/422e00ab-f1df-49b2-95b0-e537d16cf99d.png);
             background-size: cover;
+            /* Cover entire page */
             background-repeat: no-repeat;
+            /* Prevent repetition */
             background-position: center;
+
+
         }
 
-       
+        .home-tags {
+            font-size: 50px;
+            color: rgb(147, 147, 147);
+            margin-left: 200px;
+        }
 
-        .footer {
+        .home-link {
+            font-size: 30px;
+            color: rgb(100, 100, 100);
+            margin-left: 200px;
+        }
+
+        .Project {
+           
             width: 100%;
-            height: 800px;
-            background-color: greenyellow;
+            background-color: rgb(255, 255, 255);
+
+
+        }
+
+        .project-tags {
+            text-align: center;
+            font-size: 30px;
+            font-family: fantasy;
+            padding-left: 500px;
+        }
+
+        .About {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(178, 124, 124);
+        }
+
+        .Contact {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(70, 70, 70);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <span class="Portfolio"> Portfolio</span>
-            <span>Home</span>
-            <span>Project</span>
-            <span>About</span>
-            <span>Contact</span>
-        </div>
-        <div class="main">
-            <span class="name"> I'm Pranay Panore</span>
-        </div>
-        <div class="footer">
+    <div class="heading">
+        <span class="portfolio">Portfolio</span>
+        <span class="tags"><a href="#Home">Home</a></span>
+        <span class="tags"> <a href="#Project">Project</a></span>
+        <span class="tags"> <a href="#About">About</a></span>
+        <span class="tags"><a href="# Contact"> Contact</a></span>
+    </div>
+    <div class="Home" id="Home"><br><br><br><br><br><br><br><br><br>><br><br><br><br>
+        <span class="home-tags">I'm Pranay Panore</span><br><br>
+        <span class="home-link">FULL-STACK-DEVELOPER</span>
+    </div>
+    <div class="Project" id="Project"><br><br><br>
+        <spanc class="project-tags" >My HTML and CSS Project</span>
+            <table border="1">
+                <tr>
+                    <!--First Row -->
+                    <td><a href="file:///Users/Guest/Documents/HTML-main/html/Table-tags/chess.html">
+                            <img src=" https://www.sportsforlife.in/_next/image?url=https%3A%2F%2Fsports-for-life-website-images.s3.ap-south-1.amazonaws.com%2FBlog%2BImages%2Fchess-board-setup.png&w=640&q=75"
+                                alt="">
+                            <h2>Chess Layout</h2>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="file:///Users/Guest/Documents/HTML-main/html/List-tag/Newtag-2%20-list.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RlW_GAsfBOsPK8AM-zZbo-Jl_R4vECwmJQ&s"
+                                alt="">
+                            <h2>Computer Science Student Guide
+                            </h2>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="file:///Users/Guest/Documents/HTML-main/html/List-tag/Newtag-list.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pOfTZ0drUzhLghmy3jPYCr2568tcl-kEcA&s"
+                                alt="">
+                            <h2>Superhero Training Manual
+                            </h2>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Second Row -->
+                    <td>
+                        <a href="file:///Users/Guest/Documents/HTML-main/html/Table-tags/calender.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzv-7heDIWHK2jVG29SVjPliCkI2g8ach2Uw&s"
+                                alt="">
+                            <h2>Calender</h2>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="file:///Users/Guest/Documents/HTML-main/html/Table-tags/report-card.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYdUgu8tZXpocZWqPyzN3kBiPijNCkxq3PEg&s"
+                                alt="">
+                            <h2>Report Card</h2>
+                        </a>
+                    </td>
+                    <td>
+                        <a
+                            href="file:///Users/Guest/Documents/HTML-main/html/other-tags/project-list/index-three.html">
+                            <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-119639110/119639110.jpg"
+                                alt="">
+                            <h2>Top 5 Richest People</h2>
+                        </a>
+                    </td>
+                </tr>
+                <!-- Third Row -->
+                <tr>
+                    <td>
+                        <a
+                            href="file:///Users/Guest/Documents/HTML-main/html/other-tags/project-list/LED-bulbs.html">
+                            <img src="https://www.projectsmonitor.com/wp-content/uploads/2016/04/EESL-LED.jpg"
+                                alt="">
+                            <h2>LED Project</h2>
+                        </a>
+                    </td>
+                    <td>
+                        <a
+                            href="file:///Users/Guest/Documents/HTML-main/html/other-tags/project-list/keyboard-page.html">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7TlB2AXkyZOILMT5hlA09yLx0YGOhjzAhQ&s"
+                                alt="">
+                            <h2>Keyboard Project</h2>
+                        </a>
+                    </td>
+                    <td>
+                        <a
+                            href="file:///Users/Guest/Documents/HTML-main/html/other-tags/project-list/Memory-Ram-Rom.html">
+                            <img src="https://static.wixstatic.com/media/6b4aca_5c5c48c0573e4e77a7a1bc3f02ede9a9~mv2.jpg/v1/fill/w_592,h_401,al_c,lg_1,q_80/6b4aca_5c5c48c0573e4e77a7a1bc3f02ede9a9~mv2.jpg"
+                                alt="">
+                            <h2>Memory Ram, Rom Project</h2>
+                        </a>
+                    </td>
+                </tr>
+            </table>
 
-        </div>
+    </div>
+    <div class="About" id="About">
+
+    </div>
+    <div class="Contact">
+
     </div>
 </body>
 

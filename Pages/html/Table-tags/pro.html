@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Table Tags</title>
+  <head>
+    <title>Document</title>
     <style>
-        body {
-            height: 100vh;
+        body{
             width: 100vw;
+            margin: 0;
+            padding: 0;
         }
-
-        table {
-            height: 100%;
+        table{
             width: 100%;
             border-collapse: collapse;
-
+           
         }
-
-        .Heading {
-            height: 40px;
+        .header{
             width: 100%;
-            background-color: aqua;
+            height: 80px;
+            background-color: rgb(143, 81, 0);
             position: fixed;
-            padding-left: 400px;
-
-
-
-
+        }
+        .nav-link{
+            width:500px;
+            height: 80px;
+            background-color: rgb(0, 156, 161);
+        }
+        Span:hover{
+            font-size: 20px;
+            background-color: rgb(74, 7, 67);
+            text-decoration: underline;
         }
         .home{
-            height: 400px;
             width: 100%;
-            background-color: rgb(7, 26, 26);
-
-        }
-          .money{
-            height: 90px;
-            width: 80px;
-            background-color: gray;
-            padding-left: 300px;
-            
-          }
-
-          .time{
-            height: 70px;
-            width: 80px;
-            background-color: gray;
-          }
-         
-.nav-link{
-    padding-left: 200px;
-    font-size: 25px;
-}
-
-
-
-
-        .about{
             height: 500px;
+            background-color: rgb(55, 6, 6);
+        }
+        .about{
             width: 100%;
-            background-color: rgb(141, 14, 16);
+            height: 500px;
+            background-color: rgb(240, 8, 8);
         }
         .contact{
-            height: 510px;
             width: 100%;
-            background-color: rgb(162, 24, 155);
-        }
-        .help{
-            height: 300px;
-            width: 100%;
-            background-color: rgb(196, 72, 30);
+            height: 500px;
+            background-color: rgb(138, 235, 12);
         }
 
+
+        .tittle{
+            width: 150px;
+            height: 50px;
+            background-color: lightcyan;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 300px;
+    
+        }
+        .tittle:hover +.content{
+            display: block;
+            background-color: lightgreen;
+        }
+        .content{
+            width: 200px;
+            height: 200px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 300px;
+            display: none;
+        }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <table>
-        <tr class="Heading">
-            <td class="nav-link">Home</td>
-            <td class="nav-link">About</td>
-            <td class="nav-link">contact</td>
-            <td class="nav-link">help</td>
-
-        </tr>
-        <tr class="home">
-            <td colspan="4">
-                <span class="money">to be positive</span><br><br>
-                <span class="time"> let be in FULL-STACK-DEVELOPER</span>
-            </td>
-        </tr>
-        <tr class="about">
-            <td colspan="4"></td>
-        </tr>
-        <tr class="contact">
-            <td colspan="4"></td>
-        </tr>
-        <tr class="help">
-            <td colspan="4"></td>
-        </tr>
-       
+      <!-- heading -->
+      <tr class="header">
+        <td class="nav-link">
+            <span>Home</span>
+        </td>
+        <td class="nav-link">
+            <span>About</span>
+        </td>
+        <td class="nav-link">
+            <span>Project</span>
+        </td>
+        <td class="nav-link">
+            <span>Contact</span>
+        </td>
+      </tr>
+      <!-- home -->
+      <tr class="home">
+        <td colspan="4">
+            <div class="tittle">hover it</div>
+            <div class="content">Now it visible?</div>
+        </td>
+      </tr>
+      <!-- about -->
+      <tr class="about">
+        <td colspan="4"></td>
+      </tr>
+      <!-- contact -->
+      <tr class="contact">
+        <td colspan="4"></td>
+      </tr>
     </table>
-
-</body>
-
+  </body>
 </html>
+
