@@ -12,12 +12,14 @@
 
         body {
             width: 100vw;
+            height: 100vh;
             padding: 0;
             margin: 0;
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: #222;
             background: #fff;
+            overflow-x: hidden;
         }
 
         table {
@@ -37,7 +39,7 @@
         }
 
         img {
-            width: 300px;
+            width: 350px;
             height: 300px;
             border: solid black 2px;
         }
@@ -115,9 +117,9 @@
 
         .Project {
             width: 100%;
-            background-color: rgb(255, 255, 255);
-            background: linear-gradient(to left, #90D1CA, #FED2E2);
-            padding-top: 20px;
+            background: linear-gradient(to right, black, rgb(68, 129, 164));
+
+
         }
 
         .project-tags {
@@ -127,12 +129,12 @@
             margin-bottom: 40px;
             padding: 10px 0;
             text-decoration: underline;
-            color: #080808;
+            color: #ffffff;
         }
 
         .projectone {
             text-decoration: none;
-            color: white;
+            color: rgb(0, 0, 0);
         }
 
         .projectone a:hover img {
@@ -141,22 +143,29 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .the-project {
+        .project-name {
+            margin: 10px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: #98989868;
+        }
+
+        a {
             text-decoration: none;
         }
 
         /* about page */
 
         .About {
-            background-image: url(https://aicdn.picsart.com/7a7c8ef3-1dfa-493c-b821-0493a8064de8.png);
-
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: linear-gradient(to right, black, rgb(68, 129, 164));
             padding: 80px 20px;
             color: #ffffffbf;
             font-family: 'Poppins', sans-serif;
-            border: solid rgb(255, 253, 253) 3px;
+
         }
 
         .about-container {
@@ -186,7 +195,6 @@
             padding-left: 120px;
             font-size: 36px;
             margin-bottom: 50px;
-            text-decoration: underline;
             color: #ffffff;
         }
 
@@ -211,8 +219,7 @@
             margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            text-decoration: underline;
-            color: rgb(206, 202, 202);
+            color: rgb(239, 237, 237);
         }
 
         .contact-wrapper {
@@ -340,10 +347,20 @@
             </div>
             <div class="about-content">
                 <h2 class="about-tag">About Me</h2>
-                <p>Hello! I'm <strong>Pranay Panore</strong>, a passionate Full Stack Developer currently pursuing my
-                    B.Tech (1st Year).</p>
-                <p>I'm a hard-working and driven individual who isn't afraid of a challenge. I enjoy solving problems
-                    and building cool things with code.</p>
+
+                <p>Hello! I'm <strong>Pranay Panore</strong>, a B.Tech 1st-year student who is currently learning
+                    full-stack web development.</p>
+
+                <p>I'm very passionate about coding and technology. I started learning web development recently and I'm
+                    building my knowledge in HTML, CSS, JavaScript, and other tools like React and Node.js.</p>
+
+                <p>Even though I’m still learning, I enjoy working on small projects and improving step by step. I love
+                    the idea of creating websites and apps that people can actually use.</p>
+
+                <p>My goal is to become a skilled full-stack developer and work on real-world projects in the future.
+                    I'm always excited to learn something new and grow as a developer.</p>
+
+                <p><strong>Currently Learning:</strong> HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
 
             </div>
         </div>
@@ -357,14 +374,14 @@
                 <td><a href="./chess.html">
                         <img src="https://www.shutterstock.com/image-photo/copan-ruinas-copanhonduras-september-222018-600nw-1531006559.jpg"
                             alt="">
-                        <h3> Chess Layout</h3>
+                        <h3 class="project-name"> Chess Layout</h3>
                     </a>
                 </td>
                 <td>
                     <a href="../List-tag/Newtag-2 -list.html">
                         <img src="https://i.ytimg.com/vi/FjtevHN3jwk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBevHC7QAo-I52cz1P7iX2kWLlQzg"
                             alt="">
-                        <h3>Computer Science Student Guide
+                        <h3 class="project-name">Computer Science Student Guide
                         </h3>
                     </a>
                 </td>
@@ -372,7 +389,7 @@
                     <a href="../List-tag/Newtag-list.html">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pOfTZ0drUzhLghmy3jPYCr2568tcl-kEcA&s"
                             alt="">
-                        <h3>Superhero Training Manual
+                        <h3 class="project-name">Superhero Training Manual
                         </h3>
                     </a>
                 </td>
@@ -383,20 +400,20 @@
                     <a href="../Table-tags/calender-two.html">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzv-7heDIWHK2jVG29SVjPliCkI2g8ach2Uw&s"
                             alt="">
-                        <h3>Calender</h3>
+                        <h3 class="project-name">Calender</h3>
                     </a>
                 </td>
                 <td>
                     <a href="../Table-tags/report-card.html">
                         <img src="https://i.pinimg.com/564x/ef/5a/e5/ef5ae5351ec19785e8086ae2301abc51.jpg" alt="">
-                        <h3>Report Card</h3>
+                        <h3 class="project-name">Report Card</h3>
                     </a>
                 </td>
                 <td>
                     <a href="../other-tags/project-list/index-three.html">
                         <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-119639110/119639110.jpg"
                             alt="">
-                        <h3>Top 5 Richest People</h3>
+                        <h3 class="project-name">Top 5 Richest People</h3>
                     </a>
                 </td>
             </tr>
@@ -405,20 +422,20 @@
                 <td>
                     <a href="../other-tags/project-list/LED-bulbs.html">
                         <img src="https://www.projectsmonitor.com/wp-content/uploads/2016/04/EESL-LED.jpg" alt="">
-                        <h3>LED Project</h3>
+                        <h3 class="project-name">LED Project</h3>
                     </a>
                 </td>
                 <td>
                     <a href="../other-tags/project-list/keyboard-page.html">
                         <img src="https://i.pinimg.com/474x/49/58/53/495853712b486e626d8fe1ecde0284d7.jpg" alt="">
-                        <h3>Keyboard Project</h3>
+                        <h3 class="project-name">Keyboard Project</h3>
                     </a>
                 </td>
                 <td>
                     <a href="../other-tags/project-list/Memory-Ram-Rom.html">
                         <img src="https://static.wixstatic.com/media/6b4aca_5c5c48c0573e4e77a7a1bc3f02ede9a9~mv2.jpg/v1/fill/w_592,h_401,al_c,lg_1,q_80/6b4aca_5c5c48c0573e4e77a7a1bc3f02ede9a9~mv2.jpg"
                             alt="">
-                        <h3>Memory Ram, Rom Project</h3>
+                        <h3 class="project-name">Memory Ram, Rom Project</h3>
                     </a>
                 </td>
             </tr>
