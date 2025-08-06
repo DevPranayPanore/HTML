@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admission Form</title>
+    <style>
+        *{
+            font-family:  Arial, sans-serif;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to top, green, purple, yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .main {
+            width: 80vw;
+            height: 80vh;
+            background-image: url(https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_1280.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(226, 34, 16);
+            text-decoration: underline dotted;
+        }
+        form{
+            font-size: 26px;
+            padding-left: 50px;
+        }
+        button{
+            font-size: 27px;
+            margin-left: 400px;
+            border-radius: 20px;
+            background-color: rgb(223, 86, 27);
+        }
+        input{
+            height: 30px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Admission Form - Personal Details</h1>
+        <form action="./parctice-page-two.html">
+            <label for="name">Full Name:</label><br>
+            <input type="text" required id="" placeholder="Enter Your Name"><br><br>
+            <label for="">Date of Birth:</label><br>
+            <input type="date" required id="" placeholder="Enter your Nmae"><br><br>
+            <label for="">Gender:</label><br>
+            <input type="radio" name="optio">
+            <lable>Male</lable><br>
+            <input type="radio" name="optio">
+            <lable>Female</lable><br>
+            <input type="radio" name="optio">
+            <lable>Other</lable><br><br>
+            <label for="">Nationality:</label><br>
+            <input type="text" required placeholder="Enter Your Nationality"><br><br>
+            <button type="submit">Next➡️</button>
+        </form>
+    </div>
+</body>
+
+</html>
