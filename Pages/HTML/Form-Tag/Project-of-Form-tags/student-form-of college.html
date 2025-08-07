@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form </title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .main-container {
+            width: 100vw;
+            height: 1800px;
+            background-color: cornsilk;
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        /* header--?/?/ */
+        .header {
+            width: 90%;
+            height: 660px;
+            background-color: rgb(255, 255, 255);
+            font-size: 21px;
+        }
+
+        .footer {
+            width: 90%;
+            height: 615px;
+            background-color: rgb(255, 255, 255);
+            font-size: 21px;
+        }
+
+        input,textarea {
+            height: 30px;
+            width: 300px;
+            background-color:rgb(255, 255, 255) ;
+           border-radius: 8px;
+        }
+        p{
+            font-size: 30px;
+           color: brown;
+
+        }
+        legend{
+            color: rgb(241, 199, 181);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+       <p>Admission Form</p>
+        <div class="header">
+            <form action="">
+                <fieldset>
+                    <legend>Personal Details</legend><br>
+
+
+                    <!-- fist row -->
+                    <pre><label for="">First Name :</label>                                                 <label for="">Middle Name :</label>                                             <label for="">Last Name :</label>    </pre>
+                    <pre><input type="text">                    <input type="text">                     <input type="text" name="" id=""></pre>      
+                    <br>
+                    <!-- second row -->
+                    <pre><label for="">Date of Birth :</label>                                               <label for="">Mobile No :</label>                                                  <label for="">Email ID :</label></pre>
+                    <pre><input type="date" name="" id="">                     <input type="number" name="" id="">                      <input type="email" name="" id="">   </pre>
+                    <br>
+                    <!-- Third Row -->
+                    <pre><label for="">Address :</label>                                                      <label for="">District :</label>                                                        <label for="">State : </label></pre>
+                    <pre><textarea name="" id=""></textarea>                     <input type="text" name="" id="">                       <input type="text" name="" id=""></pre>
+                    <br>
+                    <!-- fourth row -->
+                    <pre><label for="">UIDAI Card No :</label>                                             <label for=""> Gender :</label></pre>
+                    <pre><input type="number" name="" id="">                            male<input type="radio"  > Female<input type="radio"></pre>
+                                                                                                                               
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer">
+            <form action="">
+                <fieldset>
+                    <legend>Previous College Details</legend>
+                    <!-- fist row -->
+                    <pre><label for="">Previous College Name :</label>                                 <label for="">Branch:</label>                                                       <label for="">Previous College Name :</label></pre>
+                    <pre><input type="text" name="" id="">                        <input type="text" name="" id="">                   <input type="text" name="" id=""></pre>
+                    <br>
+                    <!-- second row -->
+                    <pre><label for="">12th Percentage :</label>                                           <label for="">12th Obtained Marks :</label>                                <label for="">Out of Marks :</label></pre>
+                    <pre><input type="number">                        <input type="number">                    <input type="number" name="" id=""></pre>
+                    <br>
+                    <!-- third row -->
+                    <pre><label for="">Date of Joining :</label>                                              <label for="">Date of living :</label>                                             <label for="">Country :</label></pre>
+                    <pre><input type="date" name="" id="">                           <input type="date" name="" id="">                   <input type="text" name="" id=""></pre>
+                    <br>
+                    <!-- Fourth row -->
+                    <pre><label for="">State :</label></pre>
+                    <pre><input type="text" name="" id=""></pre>
+
+                </fieldset>
+            </form>
+        </div>
+</body>
+
+</html>
