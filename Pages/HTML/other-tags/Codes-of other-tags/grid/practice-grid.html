@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .main-container {
+            height: 100vh;
+           
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 0.1fr 1fr ;
+            grid-template-rows: 0.6fr 5fr 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+        }
+
+        .header {
+            grid-area: header;
+            background-color: violet;
+        }
+
+        .main {
+            grid-area: sidebar;
+            background-color: aqua;
+
+        }
+
+        .sidebar {
+            grid-area: main;
+            background-color: chocolate;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">1</div>
+        <div class="sidebar">2</div>
+        <div class="main">3</div>
+        <div class="footer">4</div>
+    </div>
+</body>
+
+</html>
