@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pinterest</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* \main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            background-color: aqua;
+        }
+
+        /* header */
+        .header {
+            height: 70px;
+            width: 100%;
+            background-color: white;
+            text-align: right;
+            position: fixed;
+            z-index: 7;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .partner-1 {
+            height: 100%;
+            width: 19%;
+            background-color: #ffffff;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .partner-2 {
+            height: 100%;
+            width: 81%;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .the {
+            text-align: center;
+            padding-right: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            color: rgb(24, 24, 68);
+        }
+
+        .the-1 {
+            text-align: center;
+            padding-right: 30px;
+            font-size: 19.1px;
+            height: 50px;
+            width: 104px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .rohan {
+            margin-left: 40px;
+            height: 30px;
+            width: 90px;
+            font-size: 20px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+
+        }
+
+        .rohan:hover {
+            background-color: rgb(203, 203, 203);
+        }
+
+        .the-2 {
+            height: 20px;
+            width: 20px;
+            font-size: 25px;
+            color: rgb(224, 48, 48);
+
+        }
+
+        /* heading */
+        .heading {
+            height: 800px;
+            width: 100%;
+            background-color: blanchedalmond;
+            z-index: 0;
+            background-image: url(https://aicdn.picsart.com/ba376270-44f4-478c-bb1c-02184f0158d3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .head {
+            height: 98%;
+            background-color: #ffffff;
+            width: 35%;
+            border-radius: 20px;
+            margin-left: 650px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .time {
+            width: 97%;
+            height: 55px;
+            margin-top: 00px;
+            font-size: 18px;
+            background-color: rgb(163, 225, 245);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            border-radius: 10px;
+        }
+
+        .time-1 {
+            width: 100%;
+            height: 90%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+
+        }
+
+        /* footer */
+        .footer {
+            height: 800px;
+            width: 100%;
+            background-color: wheat;
+        }
+
+        .prAnya {
+            height: 50px;
+            width: 50px;
+            padding-left: 219px;
+            padding-top: 20px;
+        }
+
+        .panya {
+            text-align: center;
+        }
+
+        label {
+            padding-left: 120px;
+            font-size: 20px;
+        }
+
+        input {
+            margin-left: 120px;
+            height: 40px;
+            width: 50%;
+            border-radius: 10px;
+
+        }
+
+        .button {
+            height: 38px;
+            margin-left: 128px;
+            width: 48%;
+            background-color: rgb(228, 61, 61);
+            border-radius: 10px;
+            border: none;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- header ---page-1 -->
+        <div class="header">
+            <div class="partner-1"><span class="the-2"><img class="the-2"
+                        src="https://cdn-icons-png.flaticon.com/128/145/145808.png" alt="">Pinterest <button
+                        class="rohan">Explore
+                    </button></span> </div>
+            <div class="partner-2">
+                <span class="the">About</span>
+                <span class="the">Businesses</span>
+                <span class="the">Create</span>
+                <span class="the">News</span>
+                <button class="the-1" style="background-color: red;">Log in </button>
+                <button class="the-1" style="background-color: rgb(170, 176, 171);">Sign up</button>
+            </div>
+        </div>
+        <div class="heading">
+
+            <div class="head"><br><br><br><br>
+                <div class="time"><img src="https://cdn-icons-png.flaticon.com/128/12358/12358784.png" height="25px"
+                        width="25px">
+                    Facebook login is no longer available. Log in with <br> an option below or tap to recover your
+                    account
+                </div>
+
+                <div class="time-1">
+                    <img class="prAnya" src=" https://cdn-icons-png.flaticon.com/128/145/145808.png" alt=""><br>
+                    <h1 class="panya">Welcome To <br> Pinterest</h1>
+                    <form action="">
+                        <label for="">Email address</label><br>
+                        <input type="email"><br><br>
+                        <label for="">Password</label><br>
+                        <input type="password" name="" id=""><br>
+                    </form>
+                    <span style="padding-left: 122px;">Forgotten your password?</span><br><br>
+                    <button class="button">Login</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
