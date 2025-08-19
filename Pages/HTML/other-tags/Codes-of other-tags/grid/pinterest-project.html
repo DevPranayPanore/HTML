@@ -5,10 +5,12 @@
     <title>Pinterest</title>
     <style>
         body {
+            font-family: "PT Sans", sans-serif;
             height: 100vh;
             width: 100vw;
             padding: 0;
             margin: 0;
+
         }
 
         /* \main-container */
@@ -18,11 +20,12 @@
             padding: 0;
             margin: 0;
             background-color: aqua;
+            scroll-behavior: smooth;
         }
 
         /* header */
         .header {
-            height: 70px;
+            height: 60px;
             width: 100%;
             background-color: white;
             text-align: right;
@@ -54,7 +57,7 @@
         .the {
             text-align: center;
             padding-right: 30px;
-            font-size: 20px;
+            font-size: 16px;
             cursor: pointer;
             color: rgb(24, 24, 68);
         }
@@ -62,7 +65,7 @@
         .the-1 {
             text-align: center;
             padding-right: 30px;
-            font-size: 19.1px;
+            font-size: 16px;
             height: 50px;
             width: 104px;
             border-radius: 10px;
@@ -75,7 +78,7 @@
             margin-left: 40px;
             height: 30px;
             width: 90px;
-            font-size: 20px;
+            font-size: 18px;
             background-color: white;
             border: none;
             cursor: pointer;
@@ -90,40 +93,59 @@
         .the-2 {
             height: 20px;
             width: 20px;
-            font-size: 25px;
+            font-size: 22px;
             color: rgb(224, 48, 48);
 
         }
 
         /* heading */
         .heading {
-            height: 800px;
+            height: 810px;
             width: 100%;
-            background-color: blanchedalmond;
+            background-color: rgba(255, 235, 205, 0.836);
             z-index: 0;
             background-image: url(https://aicdn.picsart.com/ba376270-44f4-478c-bb1c-02184f0158d3.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .part-7 {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.711);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .party-1 {
+            height: 80%;
+            font-size: 76px;
+            padding-left: 130px;
+            padding-top: 300px;
+            color: white;
 
         }
 
         .head {
-            height: 98%;
+            height: 99%;
             background-color: #ffffff;
             width: 35%;
             border-radius: 20px;
-            margin-left: 650px;
+            margin-left: 200px;
             display: flex;
             flex-direction: column;
+            z-index: 3;
         }
 
         .time {
             width: 97%;
             height: 55px;
             margin-top: 00px;
-            font-size: 18px;
+            font-size: 16px;
             background-color: rgb(163, 225, 245);
             display: flex;
             justify-content: center;
@@ -139,11 +161,14 @@
 
         }
 
-        /* footer */
-        .footer {
-            height: 800px;
-            width: 100%;
-            background-color: wheat;
+        .button {
+            height: 38px;
+            margin-left: 128px;
+            width: 48%;
+            background-color: rgb(228, 61, 61);
+            border-radius: 10px;
+            border: none;
+            color: whitesmoke;
         }
 
         .prAnya {
@@ -159,7 +184,7 @@
 
         label {
             padding-left: 120px;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         input {
@@ -167,17 +192,115 @@
             height: 40px;
             width: 50%;
             border-radius: 10px;
+            border: 0.4 solid black;
 
         }
 
-        .button {
-            height: 38px;
-            margin-left: 128px;
-            width: 48%;
-            background-color: rgb(228, 61, 61);
-            border-radius: 10px;
+        .prest {
+            height: 35px;
+            width: 250px;
+            font-size: 13px;
+            margin-left: 130px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+
+        }
+
+        /* footer */
+        .footer {
+            height: 800px;
+            width: 100%;
+            background-color: wheat;
+        }
+
+        /* mater-01 */
+        .mater-01 {
+            height: 750px;
+            width: 100%;
+            background-color: violet;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .vickey-1 {
+            height: 100%;
+            width: 50%;
+            background-color: #fff280;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+        .pink-1 {
+            height: 100%;
+            width: 100%;
+            background-color: #fff280;
+
+
+        }
+
+        .img-1 {
+
+            height: 250px;
+            width: 190px;
+            position: absolute;
+            left: 400px;
+            margin-top: 50px;
+            z-index: 0;
+        }
+
+        .img-2 {
+
+            height: 250px;
+            width: 190px;
+            position: absolute;
+            left: 400px;
+            margin-top: 380px;
+            z-index: 0;
+        }
+
+        .img-3 {
+            height: 250px;
+            width: 190px;
+            position: absolute;
+            margin-top: 220px;
+            left: 70px;
+            z-index: 0;
+        }
+
+        .img-4 {
+            height: 350px;
+            width: 260px;
+            left: 300px;
+            margin-left: 220px;
+            margin-top: 190px;
+            z-index: 5;
+        }
+
+        /* vickey-2 */
+        .vickey-2 {
+            height: 100%;
+            width: 50%;
+            background-color:#fff280;
+        }
+
+        .rohan-1 {
+            margin-left: 290px;
+           margin-bottom: 300px;
+            height: 40px;
+            width: 110px;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(214, 41, 41);
             border: none;
-            color: whitesmoke;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -199,40 +322,86 @@
                 <button class="the-1" style="background-color: rgb(170, 176, 171);">Sign up</button>
             </div>
         </div>
+        <!-- HEAding page -2 -->
         <div class="heading">
+            <div class="part-7">
+                <div class="party-1">Log in to get <br>your ideas</div>
+                <div class="head"><br><br><br>
+                    <div class="time"><img src="https://cdn-icons-png.flaticon.com/128/12358/12358784.png" height="25px"
+                            width="25px">
+                        Facebook login is no longer available. Log in with <br> an option below or tap to recover your
+                        account
+                    </div>
 
-            <div class="head"><br><br><br><br>
-                <div class="time"><img src="https://cdn-icons-png.flaticon.com/128/12358/12358784.png" height="25px"
-                        width="25px">
-                    Facebook login is no longer available. Log in with <br> an option below or tap to recover your
-                    account
-                </div>
+                    <div class="time-1">
+                        <img class="prAnya" src=" https://cdn-icons-png.flaticon.com/128/145/145808.png" alt=""><br>
+                        <h1 class="panya">Welcome To <br> Pinterest</h1>
+                        <form action="">
+                            <label for="">Email address</label><br>
+                            <input type="email"><br><br>
+                            <label for="">Password</label><br>
+                            <input type="password" name="" id=""><br>
+                        </form>
+                        <span style="padding-left: 122px;">Forgotten your password?</span><br><br>
+                        <button class="button">Login </button><br>
+                        <p style="padding-left: 237px;"> OR</p>
+                        <button class="prest"><img src="https://img.icons8.com/?size=48&id=V5cGWnc9R4xj&format=png"
+                                style="margin-right: 30px;" height="25px" width="25px" alt=""> Continue With
+                            Google</button><br><br>
+                        <button class="prest"><img src="https://cdn-icons-png.flaticon.com/128/7129/7129830.png"
+                                style="margin-right: 80px;" height="25px" width="25px" alt="">Use QR Code</button>
+                        <p style="text-align: center; font-size: 12px;">By continuing,you agree to Pinterest's <u
+                                style="cursor: pointer;">Terms Of <br> Service</u> and acknowledge that you've read our
+                            <br>
+                            <u style="cursor: pointer;">Privacy Policy.Notice at collection.</u>
+                        </p>
+                        <b style="font-size: 12px;padding-left: 180px;">Not on pinterest yet?Sign up </b>
+                        <span>
+                            <p style="font-size: 12px;padding-left: 160px;">Are yopu a business? <b>Get started
+                                    here!</b>
+                            </p>
+                        </span>
+                    </div>
 
-                <div class="time-1">
-                    <img class="prAnya" src=" https://cdn-icons-png.flaticon.com/128/145/145808.png" alt=""><br>
-                    <h1 class="panya">Welcome To <br> Pinterest</h1>
-                    <form action="">
-                        <label for="">Email address</label><br>
-                        <input type="email"><br><br>
-                        <label for="">Password</label><br>
-                        <input type="password" name="" id=""><br>
-                    </form>
-                    <span style="padding-left: 122px;">Forgotten your password?</span><br><br>
-                    <button class="button">Login</button>
                 </div>
             </div>
         </div>
 
-
-
         <div class="footer">
+            <img src="https://miro.medium.com/0*qMSoOn1GSLx1dNMx" style="height: 100%;width: 100%;" alt="">
+
+
+
+        </div>
+        <div class="mater-01">
+            <div class="vickey-1">
+
+
+                <span class="pink-1">
+                    <img class="img-1" src="https://s.pinimg.com/webapp/topRight-647cf6f2.png" alt=""><br>
+                    <img class="img-2" src="https://s.pinimg.com/webapp/right-a7fc68f0.png" alt="">
+                    <img class="img-3" src="https://s.pinimg.com/webapp/left-3d3f99d4.png" alt="">
+                    <img class="img-4" src="https://s.pinimg.com/webapp/center-c2550bb2.png" alt="">
+                </span>
+
+
+
+
+            </div>
+            <div class="vickey-2">
+                <h1 style="font-size: 65px;text-align: center;margin-top: 220px;">Search for an idea</h1>
+                <p style="font-size: 25px;text-align: center;margin-bottom: 190px;"> What do you want to try next?
+                    Think <br> of something you’re into – such as <br> 'easy chicken
+                    dinner' – and see what <br> you find.</p>
+                <button  class="rohan-1">Explore </button>
+            </div>
+
 
 
 
 
 
         </div>
-
 
 
 
