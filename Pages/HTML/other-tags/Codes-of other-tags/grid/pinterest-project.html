@@ -2,10 +2,235 @@
 <html lang="en">
 
 <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
     <style>
+        /* first media quary */
+        @media(min-width:300px)and(max-width:600px) {
+            body {
+
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+
+            }
+
+            /* \main-container */
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+                background-color: aqua;
+                scroll-behavior: smooth;
+                font-family: "PT Sans", sans-serif;
+            }
+
+            /* header */
+            .header {
+                height: 60px;
+                width: 100%;
+                background-color: white;
+                text-align: right;
+                position: fixed;
+                z-index: 7;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .heading {
+                height: 810px;
+                width: 100%;
+                background-color: rgba(255, 235, 205, 0.836);
+                z-index: 0;
+                background-image: url(https://store-images.s-microsoft.com/image/apps.18327.14204669951057618.66f35ee3-03b9-46a6-b185-b9ce0ffda2f4.2f04a50a-ae96-4ed4-a762-3b3e097eb58f?h=1280);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .footer {
+                height: 800px;
+                width: 100%;
+                background-color: wheat;
+            }
+
+            .maintain {
+                height: 736px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .last-apge {
+                cursor: pointer;
+                height: 30px;
+                width: 100%;
+                text-align: center;
+                font-size: 13px;
+                color: #324d4a;
+                margin-top: 5px;
+
+            }
+        }
+
+        /* second media quary */
+        @media(min-width:600px)and(max-width:1000px) {
+            body {
+
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+
+            }
+
+            /* \main-container */
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+                background-color: aqua;
+                scroll-behavior: smooth;
+                font-family: "PT Sans", sans-serif;
+            }
+
+            /* header */
+            .header {
+                height: 60px;
+                width: 100%;
+                background-color: white;
+                text-align: right;
+                position: fixed;
+                z-index: 7;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .heading {
+                height: 810px;
+                width: 100%;
+                background-color: rgba(255, 235, 205, 0.836);
+                z-index: 0;
+                background-image: url(https://store-images.s-microsoft.com/image/apps.18327.14204669951057618.66f35ee3-03b9-46a6-b185-b9ce0ffda2f4.2f04a50a-ae96-4ed4-a762-3b3e097eb58f?h=1280);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .footer {
+                height: 800px;
+                width: 100%;
+                background-color: wheat;
+            }
+
+            .maintain {
+                height: 736px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .last-apge {
+                cursor: pointer;
+                height: 30px;
+                width: 100%;
+                text-align: center;
+                font-size: 13px;
+                color: #324d4a;
+                margin-top: 5px;
+
+            }
+
+        }
+
+        /* third media quary */
+        @media(min-width:1000px)and(max-width:1500px) {
+            body {
+
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+
+            }
+
+            /* \main-container */
+            .main-container {
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+                background-color: aqua;
+                scroll-behavior: smooth;
+                font-family: "PT Sans", sans-serif;
+            }
+
+            /* header */
+            .header {
+                height: 60px;
+                width: 100%;
+                background-color: white;
+                text-align: right;
+                position: fixed;
+                z-index: 7;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .heading {
+                height: 810px;
+                width: 100%;
+                background-color: rgba(255, 235, 205, 0.836);
+                z-index: 0;
+                background-image: url(https://store-images.s-microsoft.com/image/apps.18327.14204669951057618.66f35ee3-03b9-46a6-b185-b9ce0ffda2f4.2f04a50a-ae96-4ed4-a762-3b3e097eb58f?h=1280);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .footer {
+                height: 800px;
+                width: 100%;
+                background-color: wheat;
+            }
+
+            .maintain {
+                height: 736px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .last-apge {
+                cursor: pointer;
+                height: 30px;
+                width: 100%;
+                text-align: center;
+                font-size: 13px;
+                color: #324d4a;
+                margin-top: 5px;
+
+            }
+        }
+
         body {
 
             height: 100vh;
@@ -70,11 +295,12 @@
             padding-right: 30px;
             font-size: 16px;
             height: 50px;
-            width: 104px;
+            width: 100px;
             border-radius: 10px;
             color: white;
             cursor: pointer;
             border: none;
+            text-align: center;
         }
 
         .rohan {
@@ -107,7 +333,7 @@
             width: 100%;
             background-color: rgba(255, 235, 205, 0.836);
             z-index: 0;
-            background-image: url(https://aicdn.picsart.com/ba376270-44f4-478c-bb1c-02184f0158d3.jpg);
+            background-image: url(https://store-images.s-microsoft.com/image/apps.18327.14204669951057618.66f35ee3-03b9-46a6-b185-b9ce0ffda2f4.2f04a50a-ae96-4ed4-a762-3b3e097eb58f?h=1280);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -560,8 +786,8 @@
                 <span class="the">Businesses</span>
                 <span class="the">Create</span>
                 <span class="the">News</span>
-                <button class="the-1" style="background-color: red;">Log in </button>
-                <button class="the-1" style="background-color: rgb(170, 176, 171);">Sign up</button>
+                <button class="the-1" style="background-color: red;text-align: center;">Log in </button>
+                <button class="the-1" style="background-color: rgb(170, 176, 171);text-align: center;">Sign up</button>
             </div>
         </div>
         <!-- HEAding page -2 -->
@@ -680,7 +906,8 @@
                     make it,<br>try it, do it</p>
                 <p style="font-size: 30px;text-align: center; color: rgb(185, 24, 24);">The best part of Pinterest is
                     <br>discovering new things and ideas <br> from people around the
-                    world.<br><br> <button class="rohan-1">Explore </button></p>
+                    world.<br><br> <button class="rohan-1">Explore </button>
+                </p>
                 </p>
             </div>
         </div>
