@@ -15,6 +15,8 @@
             font-family: 'Trebuchet MS', sans-serif;
             font-weight: 100;
             font-style: normal;
+            scroll-behavior: smooth;
+            scrollbar-width: 10px;
 
         }
 
@@ -180,6 +182,7 @@
             background-repeat: no-repeat;
             background-size: cover;
 
+
         }
 
         .point-1 {
@@ -189,10 +192,10 @@
         }
 
         .point-5 {
-            margin-right: 620px;
+            margin-right: 600px;
             font-size: 30px;
-            font-family: Helvetica, sans-serif;
-            word-spacing: 5px;
+            letter-spacing: 2px;
+
             animation: mymove 5s infinite;
 
         }
@@ -264,12 +267,12 @@
             font-size: 38px;
             padding-left: 20px;
             color: rgb(59, 59, 59);
-
+            position: absolute;
         }
 
         /* class-1 */
         .pointer-1 {
-            height: 29%;
+            height: 10%;
             width: 100%;
         }
 
@@ -277,13 +280,12 @@
             height: 0%;
             width: 95%;
             border: 1px solid black;
-            text-align: center;
             margin-left: 25px;
         }
 
         /* class-2 */
         .pointer-2 {
-            height: 70%;
+            height: 89%;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -291,101 +293,47 @@
         }
 
         /* class of class-2 box */
-        .class-1 {
+        .class {
             height: 75%;
             width: 22%;
             background-color: gray;
             text-align: center;
-            background: url(https://t4.ftcdn.net/jpg/04/33/37/07/360_F_433370760_aEdLEQE6IuYJPCXAlFJT0yasr5Tff2P5.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
             border-radius: 15px;
-
+            display: flex;
+            flex-direction: column;
 
         }
 
-        .class-1:hover {
+        .class:hover {
             width: 22%;
             height: 75%;
             opacity: 100;
             transform: scale(1.05);
             transition: transform 0.4s ease;
-
-        }
-
-
-        .class-2:hover {
-            width: 22%;
-            height: 75%;
-            opacity: 100;
-            transform: scale(1.05);
-            transition: transform 0.4s ease;
-
-        }
-
-
-        .class-3:hover {
-            width: 22%;
-            height: 75%;
-            opacity: 100;
-            transform: scale(1.05);
-            transition: transform 0.4s ease;
-
-        }
-
-        .class-4:hover {
-            width: 22%;
-            height: 75%;
-            opacity: 100;
-            transform: scale(1.05);
-            transition: transform 0.4s ease;
-
-        }
-
-        .class-2 {
-            height: 75%;
-            width: 22%;
-            background-color: gray;
-            text-align: center;
-            background: url(https://www.kovaimobilestheservicecenter.com/assets/img/service/software-installation.webp);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
             border-radius: 15px;
+
         }
 
-        .class-3 {
-            height: 75%;
-            width: 22%;
-            background-color: gray;
-            text-align: center;
-            background-color: gray;
-            text-align: center;
-            background: url(https://geeks2you.com/wp-content/themes/yootheme/cache/46/Laptop-Repair-vs.-Replacement_-When-to-Choose-What-467fc7ec.jpeg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
-            border-radius: 15px;
+        .pointer {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+
         }
 
-        .class-4 {
-            height: 75%;
-            width: 22%;
-            background-color: gray;
-            text-align: center;
-            background-color: gray;
-            text-align: center;
-            background: url(https://img1.wsimg.com/isteam/stock/wN68brx/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
+        .pointer:hover {
+            height: 100%;
+            width: 100%;
+            opacity: 100%;
+            background-color: rgba(42, 42, 42, 0.125);
             border-radius: 15px;
+            background: linear-gradient(to top, rgba(144, 238, 144, 0.476), rgba(0, 0, 0, 0.014));
         }
+
 
         /* class four of main - container  */
         .contact {
@@ -393,8 +341,71 @@
             height: 760px;
             padding: 0;
             margin: 0;
-            background-color: black;
+            background-color: rgb(239, 239, 239);
+            display: flex;
+            flex-direction: column;
 
+        }
+
+        /* class-one of contact section  */
+        .parlament-1 {
+            height: 25%;
+            width: 100%;
+
+        }
+
+        .fonter-1 {
+            font-size: 38px;
+            padding-left: 20px;
+            color: rgb(59, 59, 59);
+        }
+
+        .parlament {
+            height: 0px;
+            width: 95%;
+            border: solid black 1px;
+            margin-left: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* class-two of contact section  */
+        .parlament-2 {
+            height: 75%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: space-around;
+
+        }
+
+        .one {
+            background-color: aqua;
+        }
+
+        .two {
+            background-color: yellow;
+        }
+
+        .three {
+            background-color: cadetblue;
+        }
+
+        .four {
+            background-color: violet;
+        }
+
+        .five {
+            background-color: brown;
+
+        }
+
+        .six {
+            background-color: gold;
         }
     </style>
 </head>
@@ -421,22 +432,51 @@
         <!-- footer div -->
         <div class="footer">
             <div class="pointer-1">
-                <h1 class="newone">Our Services</h1><br>
-                <div class="pointer-3"></div>
-            </div>
-
+                <h1 class="newone">Our Services</h1>
+                <h3 style="position: absolute;margin-left: 1200px;margin-top: 40px;"><a href="">Book Our Services</a>
+                </h3>
+            </div><br><br>
+            <div class="pointer-3"></div><br><br><br><br>
             <div class="pointer-2">
-                <div class="class-1">
-
+                <div class="class bg-image"
+                    style="background-image:url(https://t4.ftcdn.net/jpg/04/33/37/07/360_F_433370760_aEdLEQE6IuYJPCXAlFJT0yasr5Tff2P5.jpg) ;">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color: rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Mobile Repairing</h1>
+                        <p style="margin-top: 310px;">"Fast, reliable repairs with high-quality parts and expert
+                            technicians."</p>
+                    </div>
                 </div>
-                <div class="class-2">
-                    <div class="gallery-text"></div>
+                <div class="class bg-image"
+                    style="background-image:url(https://www.kovaimobilestheservicecenter.com/assets/img/service/software-installation.webp) ;">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color:rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Mobile Software</h1>
+                        <p style="margin-top: 310px;">"Expert software troubleshooting and optimization for a smooth,
+                            fast experience."</p>
+                    </div>
                 </div>
-                <div class="class-3">
-                    <div class="gallery-text"></div>
+                <div class="class bg-image"
+                    style="background-image:url(https://geeks2you.com/wp-content/themes/yootheme/cache/46/Laptop-Repair-vs.-Replacement_-When-to-Choose-What-467fc7ec.jpeg) ;">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color: rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Laptop Repairing</h1>
+                        <p style="margin-top: 310px;">Professional laptop repairs with expert technicians for all your
+                            hardware and software needs."</p>
+                    </div>
                 </div>
-                <div class="class-4">
-                    <div class="gallery-text"></div>
+                <div class="class bg-image"
+                    style="background-image: url(https://img1.wsimg.com/isteam/stock/wN68brx/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365);">
+                    <div class="pointer">
+                        <h1
+                            style="position: absolute;margin-top: 270px; margin-left: 20px; color: rgb(232, 17, 2);letter-spacing: 2px;font-size: 30px;">
+                            Free Home Delivery</h1>
+                        <p style="margin-top: 340px;"> "Free delivery on all repairs—fast and convenient service right
+                            to your door."</p>
+                    </div>
                 </div>
 
             </div>
@@ -444,7 +484,22 @@
 
         </div>
         <!-- contact div -->
-        <div class="contact"></div>
+        <div class="contact">
+            <div class="parlament-1">
+                <p class="fonter-1"> Selling Product</p>
+                <div class="parlament"></div>
+            </div>
+            <div class="parlament-2">
+                <div class="gallery-point one"></div>
+                <div class="gallery-point two"></div>
+                <div class="gallery-point three"></div>
+                <div class="gallery-point four"></div>
+                <div class="gallery-point five"></div>
+                <div class="gallery-point six"></div>
+
+
+            </div>
+        </div>
     </div>
 </body>
 
