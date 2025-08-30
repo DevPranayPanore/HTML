@@ -17,6 +17,7 @@
             font-style: normal;
             scroll-behavior: smooth;
             scrollbar-width: 10px;
+            overflow-x: hidden;
 
         }
 
@@ -305,13 +306,14 @@
             border-radius: 15px;
             display: flex;
             flex-direction: column;
+            box-shadow: 10px 10px 10px rgb(197, 197, 197);
 
         }
 
         .class:hover {
             width: 22%;
             height: 75%;
-            opacity: 100;
+            opacity: 90%;
             transform: scale(1.05);
             transition: transform 0.4s ease;
             border-radius: 15px;
@@ -334,6 +336,16 @@
             background: linear-gradient(to top, rgba(144, 238, 144, 0.476), rgba(0, 0, 0, 0.014));
         }
 
+        a {
+            text-decoration: none;
+            color: rgb(66, 66, 66);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: rgb(195, 195, 195);
+
+        }
 
         /* class four of main - container  */
         .contact {
@@ -349,7 +361,7 @@
 
         /* class-one of contact section  */
         .parlament-1 {
-            height: 25%;
+            height: 20%;
             width: 100%;
 
         }
@@ -368,44 +380,49 @@
 
         }
 
-        a {
-            text-decoration: none;
-        }
 
         /* class-two of contact section  */
+
         .parlament-2 {
-            height: 75%;
+            height: 80%;
             width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
 
         }
 
-        .one {
-            background-color: aqua;
+        /* new class */
+        .gallery-8 {
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
 
-        .two {
-            background-color: yellow;
+        .ashish-1 {
+            width: 30%;
+            height: 92%;
+            background-color: wheat;
         }
 
-        .three {
-            background-color: cadetblue;
+        .ashish-2 {
+            width: 30%;
+            height: 92%;
+            background-color: rgb(191, 245, 179);
         }
 
-        .four {
-            background-color: violet;
+        .ashish-3 {
+            width: 30%;
+            height: 92%;
+            background-color: rgb(245, 203, 179);
         }
 
-        .five {
-            background-color: brown;
 
-        }
-
-        .six {
-            background-color: gold;
+        .about {
+            width: 100%;
+            height: 750px;
         }
     </style>
 </head>
@@ -417,23 +434,23 @@
         <div class="header">
             <div class="point-2"></div>
             <span class="point-5">The Mobile World </span>
-            <span class="point-1">Home</span>
-            <span class="point-1">Service</span>
-            <span class="point-1">About</span>
-            <span class="point-1">Contact</span>
+            <span class="point-1"><a href="#Home">Home</a></span>
+            <span class="point-1"><a href="#Service">Service</a></span>
+            <span class="point-1"><a href="#About">About</a></span>
+            <span class="point-1"><a href="#Contact">Contact</a></span>
         </div>
         <!-- heading div -->
-        <div class="heading">
+        <div class="heading" id="Home">
             <div style="background-color: rgba(5, 4, 4, 0.537) ; height: 100%;width: 100%;">
                 <h1 class="title-1">The Mobile World </h1>
                 <p class="title-2">One of the most trustable and famous shop </p>
             </div>
         </div>
         <!-- footer div -->
-        <div class="footer">
+        <div class="footer" id="Service">
             <div class="pointer-1">
                 <h1 class="newone">Our Services</h1>
-                <h3 style="position: absolute;margin-left: 1200px;margin-top: 40px;"><a href="">Book Our Services</a>
+                <h3 style="position: absolute;margin-left: 1200px;margin-top: 40px;border: 1px solid rgb(59, 59, 59);"><a href="">Book Our Services</a>
                 </h3>
             </div><br><br>
             <div class="pointer-3"></div><br><br><br><br>
@@ -484,22 +501,22 @@
 
         </div>
         <!-- contact div -->
-        <div class="contact">
+        <div class="contact" id="product">
             <div class="parlament-1">
                 <p class="fonter-1"> Selling Product</p>
                 <div class="parlament"></div>
             </div>
             <div class="parlament-2">
-                <div class="gallery-point one"></div>
-                <div class="gallery-point two"></div>
-                <div class="gallery-point three"></div>
-                <div class="gallery-point four"></div>
-                <div class="gallery-point five"></div>
-                <div class="gallery-point six"></div>
-
+                <div class="gallery-8">
+                    <div class="ashish-1"></div>
+                    <div class="ashish-2"></div>
+                    <div class="ashish-3"></div>
+                </div>
 
             </div>
         </div>
+        <!-- new class for new section -->
+        <div class="about"></div>
     </div>
 </body>
 
