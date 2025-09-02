@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-container {
+            height: 700px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(240, 240, 240);
+            display: grid;
+            /* grid-row: 1fr; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .property-1 {
+            height: 200px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .property-2 {
+            height: 500px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            place-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pro {
+            height: 350px;
+            width: 190px;
+            border: 1px rgb(209, 209, 209) solid;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .the-1 {
+            display: grid;
+            grid-template-rows: 60px 30px 70px 1.5fr;
+            margin: 0;
+            padding: 0;
+        }
+
+        .time {
+            display: grid;
+            grid-row: 30px 30px 30px 30px;
+            background-color: #124170;
+
+        }
+
+        h2 {
+            color: white;
+            padding-left: 59px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="property-1"></div>
+        <div class="property-2">
+            <div class="pro the-1">
+                <div class="time panya-1">
+                    <h2> Sunday</h2>
+                </div>
+                <div class="panya-2">
+                    <h4>May 5</h4>
+                </div>
+                <div class="panya-3"></div>
+                <div class="panya-4"></div>
+
+            </div>
+            <div class="pro the-3">
+                <div class="time panya-1">
+                    <h2>Monday</h2>
+                </div>
+            </div>
+            <div class="pro the-4"></div>
+            <div class="pro the-5"></div>
+            <div class="pro the-6"></div>
+            <div class="pro the-7"></div>
+            <div class="pro the-8"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
